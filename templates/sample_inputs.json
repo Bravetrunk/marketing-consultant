@@ -1,0 +1,289 @@
+{
+  "b2b_saas": {
+    "company_name": "NexusFlow AI",
+    "industry": "Enterprise Workflow Automation & Decision Intelligence",
+    "business_model": "b2b_saas",
+    "currency": "USD",
+    "market_sizing": {
+      "tam": 48000000000,
+      "sam": 12000000000,
+      "som": 650000000,
+      "tam_description": "Global enterprise automation and workflow orchestration market",
+      "sam_description": "Mid-market & enterprise AI-native workflow software (North America & EMEA)",
+      "som_description": "Addressable enterprise accounts reachable via outbound & digital channels over 3 years"
+    },
+    "unit_economics": {
+      "arpu_monthly": 2500,
+      "acv_annual": 30000,
+      "gross_margin_pct": 0.82,
+      "monthly_logo_churn": 0.012,
+      "monthly_expansion_rate": 0.018,
+      "sales_and_marketing_monthly": 240000,
+      "paid_ad_spend_monthly": 155000,
+      "new_customers_monthly": 20,
+      "paid_customers_monthly": 13,
+      "organic_customers_monthly": 7,
+      "sales_cycle_days": 45,
+      "prior_quarter_sm_spend": 680000,
+      "prior_quarter_revenue": 2800000,
+      "current_quarter_revenue": 3500000
+    },
+    "channels": [
+      {
+        "name": "LinkedIn Sponsored & ABM",
+        "current_spend": 85000,
+        "max_output": 120,
+        "half_sat_spend": 60000,
+        "shape_n": 1.6,
+        "output_unit": "Qualified Pipeline Leads (SAL)"
+      },
+      {
+        "name": "Google Search (High-Intent B2B)",
+        "current_spend": 70000,
+        "max_output": 140,
+        "half_sat_spend": 50000,
+        "shape_n": 1.8,
+        "output_unit": "Demo Requests (SQL)"
+      },
+      {
+        "name": "Outbound SDR & Data Enrichment",
+        "current_spend": 55000,
+        "max_output": 90,
+        "half_sat_spend": 40000,
+        "shape_n": 1.4,
+        "output_unit": "Discovery Meetings Completed"
+      },
+      {
+        "name": "Industry Thought Leadership & SEO",
+        "current_spend": 30000,
+        "max_output": 75,
+        "half_sat_spend": 25000,
+        "shape_n": 1.2,
+        "output_unit": "Inbound Organic Inquiries"
+      }
+    ],
+    "cohort_retention_curve": [
+      1.0, 0.988, 0.976, 0.965, 0.953, 0.942, 0.931, 0.920, 0.909, 0.898, 0.887, 0.877, 0.866
+    ],
+    "scenarios": {
+      "base": {
+        "arpu_multiplier": 1.0,
+        "churn_multiplier": 1.0,
+        "cac_multiplier": 1.0,
+        "conversion_multiplier": 1.0
+      },
+      "bull": {
+        "arpu_multiplier": 1.15,
+        "churn_multiplier": 0.75,
+        "cac_multiplier": 0.80,
+        "conversion_multiplier": 1.25
+      },
+      "bear": {
+        "arpu_multiplier": 0.90,
+        "churn_multiplier": 1.40,
+        "cac_multiplier": 1.30,
+        "conversion_multiplier": 0.75
+      }
+    },
+    "ice_experiments": [
+      {
+        "id": "EXP-01",
+        "stage": "BOFU",
+        "name": "Interactive ROI Calculator on Demo Landing Page",
+        "hypothesis": "Providing dynamic ROI simulation will increase demo booking conversion from 3.2% to 4.5%",
+        "metric": "Demo Request Conversion Rate",
+        "impact": 8,
+        "confidence": 8,
+        "ease": 9,
+        "owner": "Growth Engineering",
+        "status": "In Progress"
+      },
+      {
+        "id": "EXP-02",
+        "stage": "MOFU",
+        "name": "Executive Benchmark Diagnostic Whitepaper Gating",
+        "hypothesis": "Ungating executive summary and gating full custom benchmark report captures higher-intent enterprise VPs",
+        "metric": "MQL to SQL Acceptance Rate",
+        "impact": 7,
+        "confidence": 7,
+        "ease": 8,
+        "owner": "Demand Gen",
+        "status": "Ready"
+      },
+      {
+        "id": "EXP-03",
+        "stage": "TOFU",
+        "name": "LinkedIn Thought Leader Ads from Founder & CTO",
+        "hypothesis": "Promoting personal engineering insights reduces CPL by 35% compared to company page ads",
+        "metric": "Cost Per Lead (CPL)",
+        "impact": 8,
+        "confidence": 9,
+        "ease": 8,
+        "owner": "Performance Marketing",
+        "status": "Ready"
+      },
+      {
+        "id": "EXP-04",
+        "stage": "BOFU",
+        "name": "Self-Serve Sandbox Environment for Technical Buyers",
+        "hypothesis": "Allowing Solutions Architects immediate access to pre-configured sandbox shortens sales cycle by 14 days",
+        "metric": "Sales Velocity (Days to Close)",
+        "impact": 9,
+        "confidence": 7,
+        "ease": 5,
+        "owner": "Product Marketing",
+        "status": "Backlog"
+      },
+      {
+        "id": "EXP-05",
+        "stage": "RETENTION",
+        "name": "Automated Quarterly Value Realization Deck",
+        "hypothesis": "Auto-generating QBR impact slides for customer champions drives 22% increase in expansion ARR at 6-month check-in",
+        "metric": "Net Revenue Retention (NRR)",
+        "impact": 9,
+        "confidence": 8,
+        "ease": 6,
+        "owner": "Customer Success",
+        "status": "Backlog"
+      }
+    ]
+  },
+  "b2c_d2c": {
+    "company_name": "Verve Longevity",
+    "industry": "Premium Functional Nutrition & Hydration D2C",
+    "business_model": "b2c_d2c",
+    "currency": "USD",
+    "market_sizing": {
+      "tam": 18000000000,
+      "sam": 3500000000,
+      "som": 180000000,
+      "tam_description": "Global premium dietary supplements and functional hydration market",
+      "sam_description": "Digital-first affluent health & wellness consumers in US, UK, Canada",
+      "som_description": "Online direct-to-consumer targetable market over 3 years"
+    },
+    "unit_economics": {
+      "aov": 68,
+      "annual_order_frequency": 3.6,
+      "arpu_monthly": 20.4,
+      "gross_margin_pct": 0.68,
+      "monthly_logo_churn": 0.075,
+      "monthly_expansion_rate": 0.005,
+      "sales_and_marketing_monthly": 120000,
+      "paid_ad_spend_monthly": 95000,
+      "new_customers_monthly": 2400,
+      "paid_customers_monthly": 1800,
+      "organic_customers_monthly": 600,
+      "sales_cycle_days": 1,
+      "prior_quarter_sm_spend": 320000,
+      "prior_quarter_revenue": 520000,
+      "current_quarter_revenue": 710000
+    },
+    "channels": [
+      {
+        "name": "Meta Ads (Instagram / FB Reels)",
+        "current_spend": 55000,
+        "max_output": 2200,
+        "half_sat_spend": 40000,
+        "shape_n": 1.7,
+        "output_unit": "First-Time Customer Acquisitions"
+      },
+      {
+        "name": "TikTok Ads & Creator Spark Ads",
+        "current_spend": 28000,
+        "max_output": 1100,
+        "half_sat_spend": 22000,
+        "shape_n": 1.5,
+        "output_unit": "First-Time Customer Acquisitions"
+      },
+      {
+        "name": "Google Shopping & Performance Max",
+        "current_spend": 22000,
+        "max_output": 750,
+        "half_sat_spend": 18000,
+        "shape_n": 1.6,
+        "output_unit": "First-Time Customer Acquisitions"
+      },
+      {
+        "name": "Influencer Gifting & Affiliates",
+        "current_spend": 15000,
+        "max_output": 550,
+        "half_sat_spend": 12000,
+        "shape_n": 1.3,
+        "output_unit": "First-Time Customer Acquisitions"
+      }
+    ],
+    "cohort_retention_curve": [
+      1.0, 0.52, 0.44, 0.38, 0.34, 0.31, 0.29, 0.27, 0.26, 0.25, 0.24, 0.23, 0.22
+    ],
+    "scenarios": {
+      "base": {
+        "arpu_multiplier": 1.0,
+        "churn_multiplier": 1.0,
+        "cac_multiplier": 1.0,
+        "conversion_multiplier": 1.0
+      },
+      "bull": {
+        "arpu_multiplier": 1.20,
+        "churn_multiplier": 0.80,
+        "cac_multiplier": 0.85,
+        "conversion_multiplier": 1.30
+      },
+      "bear": {
+        "arpu_multiplier": 0.85,
+        "churn_multiplier": 1.35,
+        "cac_multiplier": 1.25,
+        "conversion_multiplier": 0.70
+      }
+    },
+    "ice_experiments": [
+      {
+        "id": "D2C-01",
+        "stage": "BOFU",
+        "name": "Subscription Opt-in Pre-selection on Product Page",
+        "hypothesis": "Defaulting to 30-day subscribe & save with 'cancel anytime' badge lifts subscription share from 38% to 52%",
+        "metric": "Subscription Adoption %",
+        "impact": 9,
+        "confidence": 9,
+        "ease": 9,
+        "owner": "E-Commerce CRO",
+        "status": "In Progress"
+      },
+      {
+        "id": "D2C-02",
+        "stage": "MOFU",
+        "name": "Interactive Hydration Deficit Quiz Funnel",
+        "hypothesis": "7-question lifestyle quiz personalizing bundle recommendation increases cart size from $68 to $82",
+        "metric": "Average Order Value (AOV)",
+        "impact": 8,
+        "confidence": 8,
+        "ease": 7,
+        "owner": "Creative Ops",
+        "status": "Ready"
+      },
+      {
+        "id": "D2C-03",
+        "stage": "RETENTION",
+        "name": "Day-14 SMS Check-in from Registered Dietitian",
+        "hypothesis": "Direct SMS offering personalized dosage tips cuts Day-30 subscription churn by 20%",
+        "metric": "Month 2 Retention Rate",
+        "impact": 8,
+        "confidence": 7,
+        "ease": 8,
+        "owner": "CRM & Retention",
+        "status": "Ready"
+      },
+      {
+        "id": "D2C-04",
+        "stage": "TOFU",
+        "name": "Doctor / Biochemist Reacts TikTok Creative Hook",
+        "hypothesis": "Unfiltered reaction video explaining electrolyte osmolarity delivers 40% lower CPA than lifestyle ads",
+        "metric": "CPA on TikTok",
+        "impact": 8,
+        "confidence": 8,
+        "ease": 8,
+        "owner": "Paid Social",
+        "status": "Backlog"
+      }
+    ]
+  }
+}
