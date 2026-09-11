@@ -395,56 +395,56 @@ Structured using Barbara Minto's Pyramid Principle, every slide features a bold 
 
 ---
 
-## 6. Executive User Guide & Slash Command Playbook
+## 6. Executive User Guide & Engagement Playbook
 
-The consulting engine is engineered for both C-suite executives and strategy practitioners. It introduces three institutional slash commands designed to mirror executive interactions with senior strategy partners:
+The consulting engine is engineered for both C-suite executives and strategy practitioners. It provides three institutional engagement modes designed to mirror executive interactions with senior strategy partners:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                     THE INSTITUTIONAL COMMERCIAL COMMAND SUITE                         │
+│                     THE INSTITUTIONAL COMMERCIAL ENGAGEMENT MODES                      │
 ├──────────────────────────┬──────────────────────────┬──────────────────────────────────┤
-│ 1. /goal                 │ 2. /grill-me             │ 3. /boost                        │
-│    Charter & Mandate     │    Adversarial Stress    │    Autonomous Full-Spectrum      │
+│ 1. Mandate Definition    │ 2. Adversarial Red-Team  │ 3. Autonomous Execution          │
+│    Charter & Scoping     │    Stress Testing        │    Full Assembly Line Delivery   │
 │    Sets scope & hurdles  │    Devil's Advocate Audit│    Generates all 3 deliverables  │
 └──────────────────────────┴──────────────────────────┴──────────────────────────────────┘
 ```
 
 ---
 
-### 6.1 Deep-Dive: The Three Slash Commands
+### 6.1 Deep-Dive: The Three Engagement Modes
 
-#### 1. `/goal` — Strategic Mandate & Commercial Target Setting
+#### 1. Strategic Mandate Definition & Commercial Target Setting
 - **Executive Purpose**: Establishes the engagement scope, business model profile, core ICP boundaries, and capital liquidity hurdles before any operational work begins.
 - **When to Use**: At the inception of a commercial initiative, entering a new market, launching a product line, or budgeting annual GTM capital.
 - **Underlying Mechanism**: Activates the **Engagement Partner** and **Diagnostic Analyst**. Establishes the target financial constraints (e.g. $LTV/CAC \ge 3.0\text{x}$, $\text{Payback} \le 12\text{ months}$), identifies the business archetype (B2B Enterprise SaaS, B2C D2C Subscription, Marketplace, or Hybrid), and defines the bottom-up sizing boundaries ($N \times \text{ACV}$).
-- **Executive Syntax**:
+- **Prompt Structure**:
   ```text
-  /goal [Company/Offering] [Model: B2B SaaS | B2C D2C] [Target ACV / ARPU] [Strategic Objective] [Financial Hurdle Constraints]
+  [Company/Offering Profile] + [Business Model: B2B SaaS | B2C D2C] + [Target ACV / ARPU] + [Strategic Objective] + [Financial Hurdle Constraints]
   ```
 
-#### 2. `/grill-me` — Adversarial Stress Testing & Devil's Advocate Interrogation Mode
+#### 2. Adversarial Stress Testing & Devil's Advocate Interrogation Mode
 - **Executive Purpose**: Tells the consulting engine to stop agreeing with the user and ruthlessly challenge every marketing assumption, vanity metric, and unsubstantiated claim.
-- **Why C-Suite Leaders Need This**: Most marketing agencies tell executives what they want to hear. The `/grill-me` mode acts like an adversarial Private Equity Operating Partner or Short-Seller Analyst, probing for flaws before millions of dollars in capital are committed.
+- **Why C-Suite Leaders Need This**: Most marketing agencies tell executives what they want to hear. The adversarial stress-testing mode acts like an adversarial Private Equity Operating Partner or Short-Seller Analyst, probing for flaws before millions of dollars in capital are committed.
 - **The 4 Adversarial Attack Vectors**:
   1. **The Anti-Commodity Negation Test**: Scrutinizes value propositions. If the opposite claim is absurd (e.g., "We offer bad service"), the claim is flagged as meaningless corporate fluff and rejected.
   2. **Downside Churn & CAC Shocks**: Simulates what happens to cash runway if monthly churn rises by +50% or if digital CAC doubles due to ad privacy changes or competitor bidding wars.
   3. **Hill Saturation Trap Detection**: Audits paid media spend against the Hill saturation curve to identify channels operating beyond their half-saturation point ($S_{50}$), where incremental spend produces negligible sales lift.
   4. **Strict Passing Discipline**: If unit economics fall below the 3.0x hurdle or payback exceeds 12 months, the engine issues a formal **`REJECTED`** scorecard and prescribes product/pricing surgery instead of burning ad spend.
-- **Executive Syntax**:
+- **Prompt Structure**:
   ```text
-  /grill-me [Baseline Metrics: CAC, ARPU, Churn, Media Spend] [Positioning Claims / GTM Hypothesis]
+  [Baseline Metrics: CAC, ARPU, Churn, Media Spend] + [Positioning Claims / GTM Hypothesis to Scrutinize]
   ```
 
-#### 3. `/boost` — Autonomous Full-Spectrum Execution & Deliverable Compilation
+#### 3. Autonomous Full-Spectrum Execution & Deliverable Compilation
 - **Executive Purpose**: Launches autonomous, parallel multi-agent execution across all four phases of the assembly line, running deterministic Python calculations and compiling institutional-grade deliverables directly into the workspace.
 - **What It Generates**:
   1. `COMMERCIAL_STRATEGY.md`: Exhaustive 8-section master strategy memo.
   2. `UNIT_ECONOMICS.xlsx`: Institutional 6-tab financial workbook compiled via native OpenXML.
   3. `EXECUTIVE_DECK.md`: 10-slide board presentation structured via Barbara Minto's Pyramid Principle.
 - **Underlying Mechanism**: Orchestrates all 7 agent personas, invokes `scripts/calculator.py` to prevent LLM math hallucinations, runs `scripts/exporter.py` to compile native Excel XML, and conducts the Gate 4 audit to verify 100% numerical reconciliation.
-- **Executive Syntax**:
+- **Prompt Structure**:
   ```text
-  /boost [Input JSON or Company Profile] [Output Directory]
+  [Input JSON or Company Profile] + [Target Output Directory & Scope Requirements]
   ```
 
 ---
@@ -453,29 +453,19 @@ The consulting engine is engineered for both C-suite executives and strategy pra
 
 ```text
 # Scenario 1: B2B SaaS Enterprise GTM Strategy (Full Pipeline)
-/goal Build commercial strategy for enterprise workflow AI company. Target ACV is $36,000, gross margin is 82%, monthly logo churn is 1.2%, and monthly S&M spend is $200,000 acquiring 16 logos. Enforce 3:1 LTV/CAC hurdle and 12-month payback ceiling.
-/grill-me Scrutinize our claim that we have an unfair enterprise data moat. Test whether our LinkedIn ABM spend is saturating and calculate the downside floor if sales cycles stretch from 45 to 90 days.
-/boost Execute the full 4-phase assembly line, run calculator.py and exporter.py, and compile COMMERCIAL_STRATEGY.md, UNIT_ECONOMICS.xlsx, and EXECUTIVE_DECK.md.
+"Develop an institutional commercial strategy and GTM blueprint for an enterprise workflow AI company. Target ACV is $36,000, gross margin is 82%, monthly logo churn is 1.2%, and monthly S&M spend is $200,000 acquiring 16 logos. Enforce a 3:1 LTV/CAC hurdle and 12-month payback ceiling. Scrutinize our enterprise data moat via the Negation Test, audit our LinkedIn ABM spend for Hill saturation, and calculate downside cash impact if sales cycles stretch to 90 days. Run the full 4-phase assembly line and compile COMMERCIAL_STRATEGY.md, UNIT_ECONOMICS.xlsx, and EXECUTIVE_DECK.md."
 
 # Scenario 2: B2C D2C Subscription Turnaround & Leaky Bucket Audit
-/goal Turn around a direct-to-consumer functional beverage subscription. Current AOV is $65, monthly churn is 9.5%, blended CAC has jumped to $72, and gross margin is 65%. Goal is achieving 4-month payback and restoring LTV/CAC above 3.5x.
-/grill-me Interrogate our marketing funnel. Why is Month-2 cohort drop-off exceeding 50%? Audit Meta and TikTok ad spend curves to reveal where marginal CPA explodes.
-/boost Generate turnaround commercial memo, 6-tab financial model with 24-month cohort decay curve, and board slide deck.
+"Perform a commercial turnaround analysis for a direct-to-consumer functional beverage subscription. Current AOV is $65, monthly churn is 9.5%, blended CAC has jumped to $72, and gross margin is 65%. Our goal is achieving a 4-month payback and restoring LTV/CAC above 3.5x. Interrogate our funnel to diagnose why Month-2 cohort drop-off exceeds 50%, audit Meta and TikTok spend curves to pinpoint marginal CPA explosion, and generate the turnaround strategy memo, 24-month cohort decay model in UNIT_ECONOMICS.xlsx, and board presentation."
 
 # Scenario 3: Media Budget Reallocation & Hill Saturation Optimization
-/goal Optimize $250k/month paid acquisition budget across Google Ads ($100k), LinkedIn ($90k), and Outbound SDR ($60k) for high-growth B2B fintech.
-/grill-me Model the Hill saturation curve for each channel. Identify which channels are operating past their S_50 threshold with marginal CAC exceeding $2,500.
-/boost Calculate optimal capital reallocation matrix and compile Tab 4 of UNIT_ECONOMICS.xlsx.
+"Optimize our $250k/month paid customer acquisition budget across Google Ads ($100k), LinkedIn ($90k), and Outbound SDR ($60k) for our B2B fintech platform. Model the Hill saturation curve for each channel, identify which channels operate past their S_50 inflection point with marginal CAC exceeding $2,500, calculate the optimal capital reallocation matrix, and compile Tab 4 of UNIT_ECONOMICS.xlsx."
 
 # Scenario 4: Private Equity / VC Commercial Due Diligence
-/goal Perform commercial due diligence on a Series B target claiming $10M ARR, 115% NRR, and 2.5x S&M Magic Number.
-/grill-me Decompose the 115% NRR claim: how much is genuine account expansion versus price increases masking underlying logo churn? Stress-test gross margin resilience against increasing cloud infrastructure costs.
-/boost Compile institutional investment committee commercial memo and audit scorecard.
+"Perform institutional commercial due diligence on a Series B target claiming $10M ARR, 115% NRR, and 2.5x S&M Magic Number. Decompose the 115% NRR claim to isolate genuine net expansion from price increases masking logo churn, stress-test gross margin resilience against rising infrastructure costs, and compile the Investment Committee Memo and Gate audit scorecards."
 
 # Scenario 5: High-Tempo ICE Growth Experimentation
-/goal Structure growth experimentation engine for marketplace scaling from $5M to $20M GMV over 12 months.
-/grill-me Challenge our top 5 growth ideas. Eliminate low-leverage tactical vanity experiments and enforce strict ICE scoring (Impact x Confidence x Ease).
-/boost Generate 30-60-90 day operational roadmap and compile Tab 6 ICE Matrix in UNIT_ECONOMICS.xlsx.
+"Structure a high-tempo growth experimentation engine for a digital marketplace scaling from $5M to $20M GMV over 12 months. Rigorously screen our growth backlog, eliminate low-leverage tactical vanity experiments, enforce strict ICE scoring (Impact x Confidence x Ease), and generate the 30-60-90 day operational roadmap and Tab 6 ICE Matrix in UNIT_ECONOMICS.xlsx."
 ```
 
 ---

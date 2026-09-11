@@ -12,8 +12,8 @@ Complete documentation is available in the [`docs/`](docs/) directory:
 
 | Guide | Target Audience | Key Contents |
 | :--- | :--- | :--- |
-| [**คู่มือการใช้งานภาษาไทย (HOW_TO_USE.md)**](HOW_TO_USE.md) | ผู้บริหาร, ผู้ประกอบการ, CMO, CFO, ที่ปรึกษากลยุทธ์ | คู่มือภาษาไทยฉบับสมบูรณ์: เจาะลึกคำสั่ง `/goal`, `/grill-me`, `/boost`, สถาปัตยกรรม MBB 7 เอเจนต์, การอ่านไฟล์ทั้ง 3 ชิ้น และกรณีศึกษาจริง |
-| [**Executive & Non-Technical Guide**](docs/NON_TECHNICAL_GUIDE.md) | CEOs, CMOs, CROs, CFOs, PE/VC Partners, Marketing Directors | MBB consulting philosophy, 7 agent personas, 4-phase assembly line, deliverable walkthroughs, B2B SaaS & B2C D2C case studies, and executive slash command playbooks. |
+| [**คู่มือการใช้งานภาษาไทย (HOW_TO_USE.md)**](HOW_TO_USE.md) | ผู้บริหาร, ผู้ประกอบการ, CMO, CFO, ที่ปรึกษากลยุทธ์ | คู่มือภาษาไทยฉบับสมบูรณ์: แนวทางการสั่งงานและโหมดการให้คำปรึกษา, สถาปัตยกรรม MBB 7 เอเจนต์, การอ่านไฟล์ทั้ง 3 ชิ้น และกรณีศึกษาจริง |
+| [**Executive & Non-Technical Guide**](docs/NON_TECHNICAL_GUIDE.md) | CEOs, CMOs, CROs, CFOs, PE/VC Partners, Marketing Directors | MBB consulting philosophy, 7 agent personas, 4-phase assembly line, deliverable walkthroughs, B2B SaaS & B2C D2C case studies, and executive consulting engagement playbooks. |
 | [**Technical & Quantitative Specification**](docs/TECHNICAL_DOCUMENTATION.md) | Software Engineers, Quant Financial Engineers, Growth Analysts | Formal mathematical derivations (CAC, LTV, Payback, Hill saturation, Magic Number), `calculator.py` API, zero-dependency OpenXML ECMA-376 architecture, JSON schemas, and test suites. |
 
 ---
@@ -89,25 +89,25 @@ flowchart TD
 
 ---
 
-## 🚀 Quickstart: The `/goal`, `/grill-me` & `/boost` Workflow
+## 🚀 Quickstart: Consulting Engagement Workflows
 
-The engine supports three standardized commercial slash commands for both AI-native execution and human-in-the-loop governance:
+The engine supports three primary consulting engagement modes to guide commercial analysis and execution:
 
 ```text
-/goal <Mandate & Targets> ──► /grill-me <Adversarial Stress Test> ──► /boost <Autonomous Full Delivery>
+Mandate & Scoping ──► Adversarial Red-Team Stress Test ──► Autonomous Full Delivery
 ```
 
-1. **/goal**: Sets the commercial scope, business model profile, and target financial hurdles:
+1. **Mandate Definition & Commercial Scoping**: Sets the strategic objective, business model profile, and target financial hurdles:
    ```text
-   /goal Develop commercial strategy for NexusFlow AI (B2B SaaS, $30k ACV, 82% GM), enforcing 3:1 LTV/CAC hurdle and 12-month payback ceiling.
+   Develop an institutional commercial strategy and GTM blueprint for NexusFlow AI (B2B SaaS, $30,000 ACV, 82% gross margin), enforcing a 3:1 LTV/CAC hurdle and 12-month payback ceiling.
    ```
-2. **/grill-me**: Activates the adversarial **Devil's Advocate / Red Team Mode**. The Quality Gatekeeper attacks vanity metrics, runs the Anti-Commodity Negation Test, tests +50% churn stress scenarios, and audits media channels for Hill saturation traps before releasing budget:
+2. **Adversarial Red-Team Stress Testing**: Activates **Devil's Advocate / Red Team Mode**. The Quality Gatekeeper attacks vanity metrics, runs the Anti-Commodity Negation Test, tests +50% churn stress scenarios, and audits media channels for Hill saturation traps before releasing budget:
    ```text
-   /grill-me Audit our B2B SaaS metrics: 1.2% monthly churn, $12k CAC, and $85k/mo on LinkedIn ABM. Flag leaky buckets and identify where marginal CAC explodes.
+   Stress test our B2B SaaS assumptions: 1.2% monthly churn, $12k CAC, and $85k/mo on LinkedIn ABM. Flag leaky buckets, run the Negation Test on our positioning, and identify where marginal CAC explodes.
    ```
-3. **/boost**: Triggers **Autonomous Full-Spectrum Execution**. Runs deterministic calculations in Python, generates `COMMERCIAL_STRATEGY.md`, compiles the 6-tab `UNIT_ECONOMICS.xlsx`, and outputs the 10-slide `EXECUTIVE_DECK.md`:
+3. **Autonomous Full-Spectrum Execution**: Triggers **End-to-End Assembly Line Delivery**. Runs deterministic calculations in Python, generates `COMMERCIAL_STRATEGY.md`, compiles the 6-tab `UNIT_ECONOMICS.xlsx`, and outputs the 10-slide `EXECUTIVE_DECK.md`:
    ```text
-   /boost Run complete 4-phase commercial consulting assembly line on templates/sample_inputs.json (profile: b2b_saas) and export all 3 deliverables.
+   Run the complete 4-phase commercial consulting assembly line on templates/sample_inputs.json (profile: b2b_saas) and export all 3 deliverables.
    ```
 
 ---
@@ -159,7 +159,7 @@ python3 scripts/exporter.py --test
 /Users/tonkla/.gemini/config/skills/marketing-consultant/
 ├── SKILL.md                          # Master skill definition & prompt instructions
 ├── README.md                         # Repository overview & quick start
-├── HOW_TO_USE.md                     # Comprehensive Thai user manual & slash command guide
+├── HOW_TO_USE.md                     # Comprehensive Thai user manual & engagement guide
 ├── docs/
 │   ├── NON_TECHNICAL_GUIDE.md        # Comprehensive executive & business strategy guide
 │   └── TECHNICAL_DOCUMENTATION.md    # Quantitative mathematics & developer specifications

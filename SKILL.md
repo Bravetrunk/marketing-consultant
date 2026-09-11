@@ -382,39 +382,38 @@ When the user asks to perform marketing consulting, analyze commercial strategy,
 
 ---
 
-## 8. The `/goal`, `/grill-me` & `/boost` Workflow Reference
+## 8. Client Engagement & Execution Workflows
 
-When operating with AI agents or human executive teams, use the standardized commercial slash commands:
+The consulting engine can be invoked through standard natural language prompts for three primary engagement modes:
 
-### 1. `/goal <mandate or target>`
+### 1. Mandate Definition & Commercial Scoping
 Defines the strategic objective, market scope, business model profile, and commercial hurdles:
-- **Syntax**: `/goal [Company / Sector] [Business Model: B2B SaaS | B2C D2C] [Target ACV / ARPU] [Mandate: GTM Launch | Turnaround | Scale] [Hurdles: LTV/CAC >= 3.0x, Payback <= 12m/6m]`
-- **Agent Action**: Initializes Phase 1 & 2 charters, establishes baseline financial parameters, and scopes deliverables.
+- **Interaction Style**: Provide the company profile, business model (B2B SaaS or B2C D2C), target ACV/ARPU, gross margins, and growth objectives.
+- **Agent Action**: Initializes Phase 1 & 2 charters, establishes baseline financial parameters, and scopes required deliverables.
+- **Example Prompt**:
+  > "Develop an institutional commercial strategy and GTM blueprint for NexusFlow AI (B2B SaaS, $30,000 ACV, 82% gross margin), enforcing a 3:1 LTV/CAC hurdle and 12-month payback ceiling."
 
-### 2. `/grill-me <assumptions or metrics>`
-Triggers adversarial **Devil's Advocate / Red-Team Interrogation Mode**:
-- **Syntax**: `/grill-me [Baseline Metrics: CAC, ARPU, Churn, Media Spend] [Positioning Claim]`
-- **Agent Action**: Quality Gatekeeper and Diagnostic Analyst ruthlessly attack the strategy:
+### 2. Adversarial Red-Team Stress Testing
+Triggers an adversarial **Devil's Advocate / Red-Team Interrogation**:
+- **Interaction Style**: Request a rigorous audit of current commercial metrics, churn assumptions, positioning claims, or media spend levels.
+- **Agent Action**: The Quality Gatekeeper and Diagnostic Analyst ruthlessly attack the strategy:
   1. Enforces the **Negation Test**: Flips positioning claims to expose generic fluff.
   2. Runs **Downside Stress Tests**: Simulates +50% churn and +100% CAC spikes.
   3. Audits **Hill Saturation Curves**: Exposes channels burning capital past diminishing return thresholds.
-  4. Executes **Kill Criteria**: Issues a formal `REJECTED` scorecard if unit economics destroy value.
+  4. Executes **Passing Discipline**: Issues a formal `REJECTED` scorecard if unit economics destroy value.
+- **Example Prompt**:
+  > "Stress test our 1.2% monthly churn assumption and audit whether $85k/mo on LinkedIn ABM has hit the Hill saturation ceiling. Identify where our customer acquisition engine risks leaking capital."
 
-### 3. `/boost <execution scope>`
-Triggers **Autonomous Institutional Execution Mode**:
-- **Syntax**: `/boost [Input JSON or Company Profile] [Target Output Directory]`
+### 3. Autonomous Full-Spectrum Execution
+Triggers **End-to-End Assembly Line Delivery**:
+- **Interaction Style**: Request a complete end-to-end consulting engagement from commercial diagnostic to execution deliverables.
 - **Agent Action**: Orchestrates all 7 agent personas through the 4-phase assembly line in sequence:
   1. Runs `scripts/calculator.py` to deterministically calculate unit economics.
   2. Compiles the 8-section master strategy memo into `COMMERCIAL_STRATEGY.md`.
   3. Compiles the 6-tab financial workbook into `UNIT_ECONOMICS.xlsx` via `scripts/exporter.py`.
   4. Compiles the 10-slide board presentation into `EXECUTIVE_DECK.md` following Minto Pyramid logic.
   5. Issues the Gate 4 Final Audit Scorecard confirming 100% cross-deliverable reconciliation.
-
-### Power Combo Example:
-```text
-/goal Build commercial strategy for NexusFlow AI (B2B SaaS, $30k ACV, 82% GM), enforcing 3:1 LTV/CAC and 12-month payback.
-/grill-me Stress test our 1.2% monthly churn assumption and audit whether $85k/mo on LinkedIn ABM has hit the Hill saturation ceiling.
-/boost Execute full 4-phase pipeline, run calculator.py and exporter.py, and compile COMMERCIAL_STRATEGY.md, UNIT_ECONOMICS.xlsx, and EXECUTIVE_DECK.md.
-```
+- **Example Prompt**:
+  > "Run a full 4-phase commercial strategy consulting engagement for our business using templates/sample_inputs.json (profile: b2b_saas). Generate the strategy memo, Excel model, and executive presentation."
 
 👉 **For detailed documentation, see:** [`docs/NON_TECHNICAL_GUIDE.md`](./docs/NON_TECHNICAL_GUIDE.md), [`docs/TECHNICAL_DOCUMENTATION.md`](./docs/TECHNICAL_DOCUMENTATION.md), and [`HOW_TO_USE.md`](./HOW_TO_USE.md).

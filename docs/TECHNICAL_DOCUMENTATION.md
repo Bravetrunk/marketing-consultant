@@ -87,19 +87,19 @@ flowchart TD
 
 ---
 
-### 1.1 Slash Command State Machine (`/goal`, `/grill-me`, `/boost`)
+### 1.1 Engagement Lifecycle State Machine
 
-The agent architecture supports three formal state machine triggers that govern the pipeline's execution flow:
+The agent architecture supports three formal execution modes that govern the pipeline's lifecycle flow:
 
 ```mermaid
 stateDiagram-v2
     [*] --> Idle: Agent Initialized
 
-    Idle --> CharterDefinition: /goal [Mandate & Targets]
+    Idle --> CharterDefinition: Mandate Definition & Commercial Scoping
     CharterDefinition --> TargetLocked: Profile & Hurdle Configured (LTV/CAC >= 3.0x)
 
-    TargetLocked --> AdversarialAudit: /grill-me [Adversarial Red-Team]
-    Idle --> AdversarialAudit: /grill-me [Audit Existing Metrics]
+    TargetLocked --> AdversarialAudit: Adversarial Red-Team Stress Test
+    Idle --> AdversarialAudit: Audit Existing Commercial Metrics
 
     state AdversarialAudit {
         [*] --> NegationTest: Challenge Value Proposition
@@ -112,9 +112,9 @@ stateDiagram-v2
     StrategyRefinement --> AdversarialAudit: Rework Strategy & Re-test
     AuditVerdict --> ReadyForScale: Approved (All Hurdles Passed)
 
-    ReadyForScale --> AutonomousPipeline: /boost [Autonomous Execution]
-    TargetLocked --> AutonomousPipeline: /boost [Direct Full-Run]
-    Idle --> AutonomousPipeline: /boost [Auto-Run Profile]
+    ReadyForScale --> AutonomousPipeline: Autonomous Execution
+    TargetLocked --> AutonomousPipeline: Direct Pipeline Run
+    Idle --> AutonomousPipeline: Run Profile Execution
 
     state AutonomousPipeline {
         Phase1: Phase 1 - Diagnostic & Sizing
@@ -133,12 +133,12 @@ stateDiagram-v2
 
 #### State Transition Details:
 
-1. **`/goal` (Scope Initialization)**:
+1. **Mandate Definition & Scope Initialization**:
    - **Transition**: `IDLE` $\implies$ `CHARTER_LOCKED`.
    - **Context Mutation**: Parses business model archetype (`b2b_saas` vs `b2c_d2c`), ACV/ARPU targets, Gross Margin baseline, and sets the explicit Gate 3 hurdles (e.g. $LTV/CAC \ge 3.0\text{x}$, $\text{Payback} \le 12\text{m}$).
    - **Agent Activation**: Dispatches `Engagement Partner` and `Commercial Diagnostic Analyst` to lock Phase 1-2 charters.
 
-2. **`/grill-me` (Adversarial Interrogation Mode)**:
+2. **Adversarial Red-Team Audit**:
    - **Transition**: `ANY` $\implies$ `RED_TEAM_INTERROGATION`.
    - **Context Mutation**: Directs the `Quality Gatekeeper` and `Diagnostic Analyst` into an adversarial red-team posture.
    - **Execution Pipeline**:
@@ -147,7 +147,7 @@ stateDiagram-v2
      - *Hill Saturation Trap*: Evaluates $\frac{d\text{Output}}{dS}$ across spend tiers; flags channels where $S > S_{50}$ and marginal CAC exceeds target CAC by $>1.5\text{x}$.
      - *Kill Criteria*: Evaluates Gate 3 hurdles. If unit economics fail, halts execution and outputs an adversarial audit report.
 
-3. **`/boost` (Full-Spectrum Autonomous Delivery)**:
+3. **Full-Spectrum Autonomous Delivery**:
    - **Transition**: `ANY` $\implies$ `STAGE_GATED_ASSEMBLY_LINE`.
    - **Execution Pipeline**:
      - Linearly executes Phase 1 (Diagnostic) $\to$ Gate 1 $\to$ Phase 2 (Positioning) $\to$ Gate 2 $\to$ Phase 3 (Funnel & Quantitative Modeling) $\to$ Gate 3 $\to$ Phase 4 (Operations) $\to$ Gate 4.
